@@ -1,15 +1,19 @@
-function whileLoop(number) {
-  while (number > 0) {
-    console.log(--number)
+function whileLoop(n) {
+  while (n > 0) {
+    console.log(--n)
   }
-  return "done"
+
+  return 'done'
 }
-function maybeTrue() {
-    return Math.random() >= 0.5 
+
+function doWhileLoop(array) {
+  function maybeTrue() {
+    return Math.random() >= 0.5
   }
-function doWhileLoop(array){
+
   do {
-    var whatever = array.unshift
-  } while (array.length > 0 )
+    array = array.slice(1)
+  } while (array.length > 0 && maybeTrue())
+
   return array
 }
