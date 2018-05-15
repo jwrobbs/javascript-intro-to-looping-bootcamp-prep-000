@@ -9,7 +9,7 @@ function maybeTrue() {
   }
 function doWhileLoop(array){
   do {
-    array.unshift
+    var whatever = array.unshift
   } while (array.length > 0 )
   return array
 }
